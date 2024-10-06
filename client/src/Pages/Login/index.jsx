@@ -23,9 +23,8 @@ const Login = () => {
 
     const onFinish = (values) => {
 
-      fetch('http://localhost:5000/api/auth/login', {
+      fetch('https://rental-car-api.vercel.app/api/auth/login', {
         method: 'POST',
-        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
         },

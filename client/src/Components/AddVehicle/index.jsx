@@ -74,9 +74,8 @@ const AddVehicle = () => {
         images: base64s
       }
 
-      fetch('http://localhost:5000/api/add/vehicle', {
+      fetch('https://rental-car-api.vercel.app/api/add/vehicle', {
         method: 'POST',
-        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${accessToken}`
